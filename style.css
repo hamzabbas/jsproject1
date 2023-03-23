@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(jorge-rojas-dbj0O83MM5Y-unsplash.jpg);
+
+}
+
+.container{
+    position: relative;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 7px -2px 25px black;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.input-field{
+    position: relative;
+    margin: 40px 0;
+    width: 300px;
+    border-bottom: 2px solid white;
+
+}
+
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-40%);
+    font-size: 1em;
+    pointer-events: none;
+    color: white;
+    transition: 0.5s;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -5px;
+
+}
+
+.input-field input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1em;
+    padding: 5px 35px 0 5px;
+    color: white;
+}
+
+.input-field i{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login-button{
+    padding: 10px;
+    width: 50%;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #0c7d99;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: white;
+    background-color: #0a87a7;
+    box-shadow: #03bcea 0 -5px 8px inset;
+    transform: scale(1.130);
+
+}
